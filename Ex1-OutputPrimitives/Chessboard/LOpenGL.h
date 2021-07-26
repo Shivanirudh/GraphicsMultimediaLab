@@ -1,4 +1,3 @@
-
 #ifndef LOPENGL_H
 #define LOPENGL_H
 

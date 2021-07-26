@@ -1,14 +1,6 @@
 #include "LUtil.h"
 
 void runMainLoop( int val );
-/*
-Pre Condition:
- -Initialized freeGLUT
-Post Condition:
- -Calls the main loop functions and sets itself to be called back in 1000 / SCREEN_FPS milliseconds
-Side Effects:
- -Sets glutTimerFunc
-*/
 
 int main( int argc, char* args[] )
 {

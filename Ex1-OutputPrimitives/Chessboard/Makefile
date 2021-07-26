@@ -1,4 +1,3 @@
-
 #OBJS specifies which files to compile as part of the project
 OBJS = LTexture.cpp LUtil.cpp main.cpp
 

@@ -1,4 +1,3 @@
-
 #include "LUtil.h"
 
 bool initGL()
