@@ -1,4 +1,4 @@
-#include "LUtil.h"
+#include "Signatures.h"
 
 bool initGL()
 {
@@ -34,7 +34,7 @@ void render()
 {
     //Clear color buffer
      glClear(GL_COLOR_BUFFER_BIT);
-     glBegin(GL_POINTS);
+     glBegin(GL_POLYGON);
      	glVertex2d(70,130);
      	glVertex2d(100,230);
      	glVertex2d(170,130);

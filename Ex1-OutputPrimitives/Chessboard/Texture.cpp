@@ -1,4 +1,4 @@
-#include "LTexture.h"
+#include "Texture.h"
 
 LTexture::LTexture(){
     //Initialize texture ID

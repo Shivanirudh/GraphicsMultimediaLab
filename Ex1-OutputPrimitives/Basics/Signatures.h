@@ -1,7 +1,7 @@
 #ifndef LUTIL_H
 #define LUTIL_H
 
-#include "LOpenGL.h"
+#include "Headers.h"
 #include <stdio.h>
 
 //Screen Constants

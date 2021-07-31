@@ -1,5 +1,5 @@
-#include "LUtil.h"
-#include "LTexture.h"
+#include "Signatures.h"
+#include "Texture.h"
 
 //Checkerboard texture
 LTexture gCheckerBoardTexture;
