@@ -9,7 +9,7 @@ Semester 7 Lab Work
   ```
   make all
   ```
-  This generates the output file by the name `ex`.
+  This generates the output file with the name `ex`.
   * Check output with the command:
   ```
   ./ex
