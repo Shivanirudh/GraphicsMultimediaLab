@@ -13,30 +13,29 @@ int main( int argc, char* args[] ){
 	glutCreateWindow( "OpenGL" );
 
 	int option=0;
-	cout<<"Choose center: (1 for origin, 2 for elsewhere): ";
+	cout<<"Choose number of edges: (1 for line, 3 and upwards for polygon): ";
 	cin>>option;
 
-	selectCenter(option);
-	cout<<"Center: ("<<X0<<", "<<Y0<<")"<<endl;
-	cout<<"Radius: "<<radius<<endl;
+	setEdgeCount(option);
+	cout<<"Enter vertices: "<<endl;
+	for(int i=0;i<edge_count;i++){
+		cout<<"Vertex "<<i+1<<" (x,y): ";
+		int x,y;
+		cin>>x>>y;
+		X_points.push_back(x);
+		Y_points.push_back(y);
+
+	}
+
+	drawPolygon();
+	cout<<"Number of edges: "<<edge_count<<endl;
 
 	if( !initGL() )
 	{
 		printf( "Unable to initialize graphics library!\n" );
 		return 1;
 	}
-
-	vector<pair<int, int>> points = Midpoint();
-	int count=0;
-	cout<<"Points plotted: "<<endl;
-	for(pair<int, int> p: points){
-        cout<<"("<<p.first<<", "<<p.second<<")"<<" ";
-        count++;
-        if(count==4){
-        	count=0;
-        	cout<<endl;
-        }
-    }
+	
 
 	glutDisplayFunc( render );
 

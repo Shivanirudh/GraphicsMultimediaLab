@@ -47,10 +47,10 @@ void render(){
 }
 
 void selectOctant(int option){
-    X0 = coords[option-1][0]*20;
-    Y0 = coords[option-1][1]*20;
-    Xn = coords[option-1][2]*20;
-    Yn = coords[option-1][3]*20;
+    X0 = coords[option-1][0];
+    Y0 = coords[option-1][1];
+    Xn = coords[option-1][2];
+    Yn = coords[option-1][3];
 }
 
 int sign(int val){
