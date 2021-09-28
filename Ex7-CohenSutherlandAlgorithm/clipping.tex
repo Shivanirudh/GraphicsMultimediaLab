@@ -1,0 +1,134 @@
+\documentclass[9pt,letterpaper]{article}
+%\usepackage[utf8]{inputenc}
+\UseRawInputEncoding
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+%For syntax highlighting
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+%%Sets different parameters
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+\lstset{style=mystyle}
+
+\title{\textbf{Department of Computer Science and Engineering}}
+\author{\textbf{Shivanirudh S G, 185001146, Semester VII }}
+
+\date{28 September 2021}
+
+\begin{document}
+\maketitle
+\hrule
+\section*{\center{UCS1712 - Graphics and Multimedia Lab}}
+\hrule 
+\bigskip\bigskip
+
+%Assignment name
+\subsection*{\center{\textbf{Exercise 7: Cohen Sutherland Line clipping in C++ using OpenGL}}}
+
+%Objective
+\subsection*{\flushleft{Objective:}}
+\begin{flushleft}
+    Apply Cohen Sutherland line clipping on a line (x1,y1) (x2,y2) with respect to a clipping window (XWmin,YWmin) (XWmax,YWmax). 
+\end{flushleft}
+
+%Code
+\subsection*{\flushleft{Code:}}
+\begin{flushleft}
+\lstinputlisting[language = C++]{Headers.h}
+\lstinputlisting[language = C++]{Signatures.h}
+\lstinputlisting[language = C++]{Helpers.h}
+\lstinputlisting[language = C++]{main.cpp}
+\end{flushleft}
+\newpage
+\subsection*{\flushleft{Output:}}
+\textbf{Trivial Accept:}\\
+
+Enter window dimensions:  \\
+Enter minimum X value: 200 \\
+Enter maximum X value: 300 \\
+Enter minimum Y value: 200 \\
+Enter maximum Y value: 300 \\
+
+Enter vertices:  \\
+Vertex 1 (x y): 210 220 \\
+Vertex 2 (x y): 250 260 \\
+Trivially accepted \\
+New points are : (210, 220) and (250, 260) \\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=5cm]{Outputs/OP1.png}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=5cm]{Outputs/OP2.png}
+\end{figure}
+
+\newpage
+\textbf{Trivial Reject:}\\
+
+Enter vertices:  \\
+Vertex 1 (x y): 100 150 \\
+Vertex 2 (x y): 350 200 \\
+Trivially rejected \\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=5cm]{Outputs/OP3.png}
+\end{figure}
+
+\newpage
+\textbf{\large{One vertex outside: }}\\
+
+Enter vertices:  \\
+Vertex 1 (x y): 100 250 \\
+Vertex 2 (x y): 230 270 \\
+New points are : (200, 265.385) and (230, 270) \\
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=5cm]{Outputs/OP4.png}
+\end{figure}
+
+\newpage
+\textbf{\large{Both vertices outside: }}\\
+
+Enter vertices:  \\
+Vertex 1 (x y): 170 320 \\
+Vertex 2 (x y): 320 190 \\
+New points are : (200, 265.385) and (230, 270) \\
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=5cm]{Outputs/OP5.png}
+\end{figure}
+
+\bigskip\bigskip
+\hrule
+
+\end{document}
