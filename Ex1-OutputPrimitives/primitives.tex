@@ -36,7 +36,7 @@
 \title{\textbf{Department of Computer Science and Engineering}}
 \author{\textbf{Shivanirudh S G, 185001146, Semester VII }}
 
-\date{26 July 2021}
+\date{15 July 2021}
 
 \begin{document}
 \maketitle
@@ -49,7 +49,7 @@
 \subsection*{\center{\textbf{Exercise 1: Study of Basic Output Primitives in C++ using OpenGL}}}
 
 %Objective
-\subsection*{\flushleft{Objective:}}
+\subsection*{\flushleft{Aim:}}
 \begin{flushleft}
     To create an output window using OPENGL and to draw the following basic output primitives: POINTS, LINES, LINE\_STRIP, LINE\_LOOP, TRIANGLES, QUADS, QUAD\_STRIP, POLYGON.    
 \end{flushleft}
@@ -58,13 +58,13 @@
 \subsection*{\flushleft{Code:}}
 \textbf{Common files}
 \begin{flushleft}
-\lstinputlisting[language = C++]{./Basics/LOpenGL.h}
-\lstinputlisting[language = C++]{./Basics/LUtil.h}
+\lstinputlisting[language = C++]{./Basics/Headers.h}
+\lstinputlisting[language = C++]{./Basics/Signatures.h}
 \lstinputlisting[language = C++]{./Basics/main.cpp}
 \end{flushleft}
 \newpage
 \textbf{POINTS:}
-\lstinputlisting[language = C++, firstline=37, lastline=51]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=37, lastline=51]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -73,7 +73,7 @@
 
 \newpage
 \textbf{LINES:}
-\lstinputlisting[language = C++, firstline=54, lastline=68]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=54, lastline=68]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -82,7 +82,7 @@
 
 \newpage
 \textbf{LINE\_STRIP:}
-\lstinputlisting[language = C++, firstline=70, lastline=84]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=70, lastline=84]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -91,7 +91,7 @@
 
 \newpage
 \textbf{LINE\_LOOP:}
-\lstinputlisting[language = C++, firstline=86, lastline=100]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=86, lastline=100]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -100,7 +100,7 @@
 
 \newpage
 \textbf{TRIANGLES:}
-\lstinputlisting[language = C++, firstline=102, lastline=116]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=102, lastline=116]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -109,7 +109,7 @@
 
 \newpage
 \textbf{QUADS:}
-\lstinputlisting[language = C++, firstline=118, lastline=132]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=118, lastline=132]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -118,7 +118,7 @@
 
 \newpage
 \textbf{QUAD\_STRIP:}
-\lstinputlisting[language = C++, firstline=70, lastline=84]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=70, lastline=84]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -127,7 +127,7 @@
 
 \newpage
 \textbf{POLYGON:}
-\lstinputlisting[language = C++, firstline=86, lastline=100]{./Basics/LUtil.cpp}
+\lstinputlisting[language = C++, firstline=86, lastline=100]{./Basics/Helpers.h}
 \textbf{\flushleft{Output:}}
 \begin{figure}[h]
     \centering
@@ -137,18 +137,18 @@
 \hrule
 \bigskip\bigskip
 \newpage
-\subsection*{\flushleft{Objective:}}
+\subsection*{\flushleft{Aim:}}
 \begin{flushleft}
     To create an output window and draw a checkerboard using OpenGL.    
 \end{flushleft}
 
 \subsection*{\flushleft{Code:}}
 \begin{flushleft}
-\lstinputlisting[language = C++]{./Chessboard/LOpenGL.h}
-\lstinputlisting[language = C++]{./Chessboard/LTexture.h}
-\lstinputlisting[language = C++]{./Chessboard/LTexture.cpp}
-\lstinputlisting[language = C++]{./Chessboard/LUtil.h}
-\lstinputlisting[language = C++]{./Chessboard/LUtil.cpp}
+\lstinputlisting[language = C++]{./Chessboard/Headers.h}
+\lstinputlisting[language = C++]{./Chessboard/Texture.h}
+\lstinputlisting[language = C++]{./Chessboard/Texture.cpp}
+\lstinputlisting[language = C++]{./Chessboard/Signatures.h}
+\lstinputlisting[language = C++]{./Chessboard/Helpers.h}
 \lstinputlisting[language = C++]{./Chessboard/main.cpp}
 \end{flushleft}
 \newpage
@@ -161,16 +161,16 @@
 \hrule
 \bigskip\bigskip
 \newpage
-\subsection*{\flushleft{Objective:}}
+\subsection*{\flushleft{Aim:}}
 \begin{flushleft}
     To create an output window and draw a house using POINTS,LINES,TRAINGLES and QUADS/POLYGON. 
 \end{flushleft}
 
 \subsection*{\flushleft{Code:}}
 \begin{flushleft}
-\lstinputlisting[language = C++]{House/LOpenGL.h}
-\lstinputlisting[language = C++]{House/LUtil.h}
-\lstinputlisting[language = C++]{House/LUtil.cpp}
+\lstinputlisting[language = C++]{House/Headers.h}
+\lstinputlisting[language = C++]{House/Helpers.h}
+\lstinputlisting[language = C++]{House/Signatures.h}
 \lstinputlisting[language = C++]{House/main.cpp}
 \end{flushleft}
 % \newpage
